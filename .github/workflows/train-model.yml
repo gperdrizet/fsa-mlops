@@ -21,9 +21,9 @@ jobs:
       run: pip install -r requirements.txt
 
     - name: Train and save model
-      run: python demo-2/model.py
+      run: python github-actions-demo/model.py
 
     - uses: actions/upload-artifact@v7
       with:
-        path: demo-2/iris_model.pkl
+        path: github-actions-demo/iris_model.pkl
         archive: false

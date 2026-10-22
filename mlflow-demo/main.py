@@ -1,3 +1,7 @@
+'''Model training and logging script using MLflow for the Iris dataset'''
+
+from pathlib import Path
+
 import mlflow
 import mlflow.sklearn
 from sklearn.ensemble import RandomForestClassifier
@@ -5,8 +9,16 @@ from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 
-# Set up MLflow to log locally (optional, but helpful for debugging)
-mlflow.set_tracking_uri("sqlite:///mlflow.db")
+# Set up MLflow to log locally
+current_dir = Path(__file__).resolve().parent
+mlflow_path = f"{current_dir}/mlflow_artifacts"
+mlflow.set_tracking_uri(f"sqlite:///{current_dir}/mlflow.db")
+
+mlflow.create_experiment(
+    name="RandomForest_Iris_Experiment",
+    artifact_location=mlflow_path
+)
+
 mlflow.set_experiment("RandomForest_Iris_Experiment")
 
 # Load dataset
