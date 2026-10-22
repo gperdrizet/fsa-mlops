@@ -23,3 +23,7 @@ jobs:
     - name: Train and save model
       run: python model.py
 
+    - uses: actions/upload-artifact@v7
+      with:
+        path: iris_model.pkl
+        archive: false
