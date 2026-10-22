@@ -38,7 +38,7 @@ The workflow triggers and the model is retrained on GitHub's servers. The result
 
 Actions let you automate practically anything and can be triggered by many different events: push, pull-request open/close/merge, tag, release - basically anything that GitHub tracks.
 
-## MLFlow
+## 2. MLFlow
 
 The script [`mlflow-demo/main.py`](https://github.com/gperdrizet/fsa-mlops/blob/main/demo-3/main.py) again trains a simple model on the iris data - but it uses MLFlow to track the training run, recording hyperparameters, performance results and retaining a copy of the trained model.
 
