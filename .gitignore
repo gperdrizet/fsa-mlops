@@ -4,3 +4,4 @@ mlflow.db
 mlflow_artifacts
 
 breast_cancer_model.pkl
+wine_model.pkl
