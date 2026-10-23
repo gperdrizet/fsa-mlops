@@ -5,3 +5,7 @@ mlflow_artifacts
 
 breast_cancer_model.pkl
 wine_model.pkl
+model.pkl
+
+reference_data.csv
+train_data.csv
