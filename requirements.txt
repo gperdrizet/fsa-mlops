@@ -1,3 +1,5 @@
+fastapi
 joblib
 mlflow
 scikit-learn
+uvicorn

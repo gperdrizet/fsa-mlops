@@ -12,6 +12,7 @@ from sklearn.metrics import accuracy_score
 # Set up MLflow to log locally
 current_dir = Path(__file__).resolve().parent
 mlflow_path = f"{current_dir}/mlflow_artifacts"
+print(f'Path to mlflow artifact directory: {mlflow_path}')
 mlflow.set_tracking_uri(f"sqlite:///{current_dir}/mlflow.db")
 
 mlflow.create_experiment(
