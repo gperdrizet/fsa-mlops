@@ -1,3 +1,7 @@
+evidently
+fastapi
 joblib
 mlflow
+pandas
 scikit-learn
+uvicorn

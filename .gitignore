@@ -1,3 +1,12 @@
+__pycache__
 .venv
 mlflow.db
 mlflow_artifacts
+
+# Models
+breast_cancer_model.pkl
+model.pkl
+
+# Data
+train_data.csv
+reference_data.csv

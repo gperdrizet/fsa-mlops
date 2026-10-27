@@ -49,3 +49,17 @@ mlflow server --backend-store-uri sqlite:///mlflow.db
 ```
 
 Then visit port 5000 on localhost.
+
+## 3. Docker
+
+```
+docker run -d --rm --name docker-pipeline -v "${PWD}/models:/app/models" docker-pipeline:v1
+```
+
+## 4. FastAPI
+
+TODO
+
+## 5. Monitoring with Evidently AI
+
+TODO
