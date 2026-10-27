@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 '''Model deployment for Breast Cancer classification using FastAPI'''
 
+=======
+>>>>>>> d91ba9f6edf6b0e9d6d7403b9636ca9129242bfb
 from pathlib import Path
 
 from fastapi import FastAPI
@@ -9,7 +12,11 @@ import joblib
 
 # Load the saved model
 current_dir = Path(__file__).resolve().parent
+<<<<<<< HEAD
 model = joblib.load(current_dir / 'breast_cancer_model.pkl')
+=======
+model = joblib.load(f'{current_dir}/breast_cancer_model.pkl')
+>>>>>>> d91ba9f6edf6b0e9d6d7403b9636ca9129242bfb
 
 app = FastAPI()
 
@@ -29,7 +36,11 @@ def predict(data: InputData):
 
     # Convert the input features into a numpy array and reshape it for the model
     features = np.array(data.features).reshape(1, -1)
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d91ba9f6edf6b0e9d6d7403b9636ca9129242bfb
     # Make the prediction
     prediction = model.predict(features)
     print(prediction)

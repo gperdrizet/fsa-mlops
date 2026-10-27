@@ -13,4 +13,8 @@ data = {
 response = requests.post("http://127.0.0.1:8000/predict/", json=data)
 
 # Print the response (prediction)
+<<<<<<< HEAD
 print(response.json())
+=======
+print(response.json()) 
+>>>>>>> d91ba9f6edf6b0e9d6d7403b9636ca9129242bfb

@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 '''API for Breast Cancer classification using the trained Random Forest model'''
 
+=======
+>>>>>>> d91ba9f6edf6b0e9d6d7403b9636ca9129242bfb
 from pathlib import Path
 
 import joblib
@@ -9,7 +12,11 @@ from pydantic import BaseModel
 
 # Load model
 current_dir = Path(__file__).resolve().parent
+<<<<<<< HEAD
 model = joblib.load(current_dir / "model.pkl")
+=======
+model = joblib.load(f"{current_dir}/model.pkl")
+>>>>>>> d91ba9f6edf6b0e9d6d7403b9636ca9129242bfb
 
 app = FastAPI()
 

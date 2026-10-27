@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 '''Model training for Breast Cancer classification using Logistic Regression'''
+=======
+# Train the Model
+>>>>>>> d91ba9f6edf6b0e9d6d7403b9636ca9129242bfb
 
 from pathlib import Path
 
@@ -29,4 +33,8 @@ print(f"Model Accuracy: {accuracy * 100:.2f}%")
 
 # Save the trained model to a file
 current_dir = Path(__file__).resolve().parent
+<<<<<<< HEAD
 joblib.dump(model, current_dir / 'breast_cancer_model.pkl')
+=======
+joblib.dump(model, f'{current_dir}/breast_cancer_model.pkl')
+>>>>>>> d91ba9f6edf6b0e9d6d7403b9636ca9129242bfb

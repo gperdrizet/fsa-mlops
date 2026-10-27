@@ -3,10 +3,9 @@ __pycache__
 mlflow.db
 mlflow_artifacts
 
-# Models
 breast_cancer_model.pkl
+wine_model.pkl
 model.pkl
 
-# Data
-train_data.csv
 reference_data.csv
+train_data.csv
