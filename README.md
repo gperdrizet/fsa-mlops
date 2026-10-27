@@ -2,6 +2,8 @@
 
 [![Train ML Model](https://github.com/gperdrizet/fsa-mlops/actions/workflows/train-model.yml/badge.svg)](https://github.com/gperdrizet/fsa-mlops/actions/workflows/train-model.yml)
 
+Commit from AWS Sagemaker!
+
 ## Quickstart
 
 1. Fork the repository and create a Codespace on your fork (or clone locally)
